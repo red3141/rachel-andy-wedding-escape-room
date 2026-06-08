@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" preserveAspectRatio="none">
+  <rect x="4" y="4" width="232" height="152" rx="8" fill="#3a1f0d" stroke="#1a1a1a" stroke-width="4" stroke-dasharray="14 8"/>
+  <text x="120" y="80" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#111" text-anchor="middle" dominant-baseline="middle">DRAWER OPEN</text>
+  <text x="120" y="104" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#111" opacity="0.55" text-anchor="middle" dominant-baseline="middle">placeholder</text>
+</svg>

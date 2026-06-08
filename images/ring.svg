@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+  <rect x="4" y="4" width="92" height="92" rx="8" fill="#f4d03f" stroke="#1a1a1a" stroke-width="4" stroke-dasharray="14 8"/>
+  <text x="50" y="50" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#111" text-anchor="middle" dominant-baseline="middle">RING</text>
+  <text x="50" y="72" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#111" opacity="0.55" text-anchor="middle" dominant-baseline="middle">placeholder</text>
+</svg>
