@@ -28,10 +28,10 @@ EOF
 }
 
 # --- Walls (scene backgrounds) ---
-svg wall-green  1280 720 "#2e8b57" 96 "GREEN WALL"
-svg wall-red    1280 720 "#c0392b" 96 "RED WALL"
-svg wall-yellow 1280 720 "#f1c40f" 96 "YELLOW WALL"
-svg wall-blue   1280 720 "#2980b9" 96 "BLUE WALL"
+svg wall-white   1280 720 "#ffffff" 96 "WHITE WALL"
+svg wall-orange  1280 720 "#e67e22" 96 "ORANGE WALL"
+svg wall-yellow  1280 720 "#f1c40f" 96 "YELLOW WALL"
+svg wall-magenta 1280 720 "#d6249f" 96 "MAGENTA WALL"
 
 # --- Green wall objects ---
 svg door-closed     240 430 "#6b4f2a" 26 "DOOR"
@@ -57,7 +57,8 @@ svg drawer-closed 240 160 "#7b3f1d" 26 "DRAWER"
 svg drawer-open   240 160 "#3a1f0d" 24 "DRAWER OPEN"
 
 # --- Special: welcome mat zoom (the solvable clue) ---
-# Encodes the button order: Blue, Yellow, Green, Red, Green, Yellow, Blue.
+# Encodes the button order:
+#   White, White, White, Orange, Yellow, Yellow, Magenta, Magenta, Magenta.
 cat > "$DIR/welcome-mat-zoom.svg" <<'EOF'
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" preserveAspectRatio="xMidYMid meet">
   <rect x="6" y="6" width="748" height="348" rx="18" fill="#8b5a2b" stroke="#5c3a18" stroke-width="6"/>
@@ -65,13 +66,15 @@ cat > "$DIR/welcome-mat-zoom.svg" <<'EOF'
   <text x="380" y="110" font-family="Georgia, serif" font-size="64" font-weight="700" fill="#3a230f" text-anchor="middle">WELCOME</text>
   <text x="380" y="160" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#3a230f" text-anchor="middle" opacity="0.8">(placeholder clue &#8212; press the wall buttons in this order)</text>
   <g>
-    <rect x="120" y="210" width="60" height="60" rx="6" fill="#2980b9" stroke="#222" stroke-width="3"/>
-    <rect x="190" y="210" width="60" height="60" rx="6" fill="#f1c40f" stroke="#222" stroke-width="3"/>
-    <rect x="260" y="210" width="60" height="60" rx="6" fill="#2e8b57" stroke="#222" stroke-width="3"/>
-    <rect x="330" y="210" width="60" height="60" rx="6" fill="#c0392b" stroke="#222" stroke-width="3"/>
-    <rect x="400" y="210" width="60" height="60" rx="6" fill="#2e8b57" stroke="#222" stroke-width="3"/>
-    <rect x="470" y="210" width="60" height="60" rx="6" fill="#f1c40f" stroke="#222" stroke-width="3"/>
-    <rect x="540" y="210" width="60" height="60" rx="6" fill="#2980b9" stroke="#222" stroke-width="3"/>
+    <rect x="115" y="215" width="50" height="50" rx="5" fill="#ffffff" stroke="#222" stroke-width="3"/>
+    <rect x="175" y="215" width="50" height="50" rx="5" fill="#ffffff" stroke="#222" stroke-width="3"/>
+    <rect x="235" y="215" width="50" height="50" rx="5" fill="#ffffff" stroke="#222" stroke-width="3"/>
+    <rect x="295" y="215" width="50" height="50" rx="5" fill="#e67e22" stroke="#222" stroke-width="3"/>
+    <rect x="355" y="215" width="50" height="50" rx="5" fill="#f1c40f" stroke="#222" stroke-width="3"/>
+    <rect x="415" y="215" width="50" height="50" rx="5" fill="#f1c40f" stroke="#222" stroke-width="3"/>
+    <rect x="475" y="215" width="50" height="50" rx="5" fill="#d6249f" stroke="#222" stroke-width="3"/>
+    <rect x="535" y="215" width="50" height="50" rx="5" fill="#d6249f" stroke="#222" stroke-width="3"/>
+    <rect x="595" y="215" width="50" height="50" rx="5" fill="#d6249f" stroke="#222" stroke-width="3"/>
   </g>
 </svg>
 EOF

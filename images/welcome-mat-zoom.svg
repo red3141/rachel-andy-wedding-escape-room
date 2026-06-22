@@ -4,12 +4,14 @@
   <text x="380" y="110" font-family="Georgia, serif" font-size="64" font-weight="700" fill="#3a230f" text-anchor="middle">WELCOME</text>
   <text x="380" y="160" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#3a230f" text-anchor="middle" opacity="0.8">(placeholder clue &#8212; press the wall buttons in this order)</text>
   <g>
-    <rect x="120" y="210" width="60" height="60" rx="6" fill="#2980b9" stroke="#222" stroke-width="3"/>
-    <rect x="190" y="210" width="60" height="60" rx="6" fill="#f1c40f" stroke="#222" stroke-width="3"/>
-    <rect x="260" y="210" width="60" height="60" rx="6" fill="#2e8b57" stroke="#222" stroke-width="3"/>
-    <rect x="330" y="210" width="60" height="60" rx="6" fill="#c0392b" stroke="#222" stroke-width="3"/>
-    <rect x="400" y="210" width="60" height="60" rx="6" fill="#2e8b57" stroke="#222" stroke-width="3"/>
-    <rect x="470" y="210" width="60" height="60" rx="6" fill="#f1c40f" stroke="#222" stroke-width="3"/>
-    <rect x="540" y="210" width="60" height="60" rx="6" fill="#2980b9" stroke="#222" stroke-width="3"/>
+    <rect x="115" y="215" width="50" height="50" rx="5" fill="#ffffff" stroke="#222" stroke-width="3"/>
+    <rect x="175" y="215" width="50" height="50" rx="5" fill="#ffffff" stroke="#222" stroke-width="3"/>
+    <rect x="235" y="215" width="50" height="50" rx="5" fill="#ffffff" stroke="#222" stroke-width="3"/>
+    <rect x="295" y="215" width="50" height="50" rx="5" fill="#e67e22" stroke="#222" stroke-width="3"/>
+    <rect x="355" y="215" width="50" height="50" rx="5" fill="#f1c40f" stroke="#222" stroke-width="3"/>
+    <rect x="415" y="215" width="50" height="50" rx="5" fill="#f1c40f" stroke="#222" stroke-width="3"/>
+    <rect x="475" y="215" width="50" height="50" rx="5" fill="#d6249f" stroke="#222" stroke-width="3"/>
+    <rect x="535" y="215" width="50" height="50" rx="5" fill="#d6249f" stroke="#222" stroke-width="3"/>
+    <rect x="595" y="215" width="50" height="50" rx="5" fill="#d6249f" stroke="#222" stroke-width="3"/>
   </g>
 </svg>

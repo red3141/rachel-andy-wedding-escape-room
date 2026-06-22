@@ -7,15 +7,20 @@
   "use strict";
 
   // --- Puzzle configuration ---------------------------------
-  // Walls in clockwise order. Player starts facing GREEN.
-  //   turn right (+1): green -> red -> yellow -> blue
-  //   turn left  (-1): green -> blue -> yellow -> red
-  const WALL_ORDER = ["green", "red", "yellow", "blue"];
+  // Walls in clockwise order. Player starts facing WHITE.
+  //   turn right (+1): white -> orange -> yellow -> magenta
+  //   turn left  (-1): white -> magenta -> yellow -> orange
+  const WALL_ORDER = ["white", "orange", "yellow", "magenta"];
 
-  // Button order shown on the welcome-mat clue image (B Y G R G Y B).
-  const TARGET_SEQUENCE = ["blue", "yellow", "green", "red", "green", "yellow", "blue"];
+  // Button order shown on the welcome-mat clue image.
+  const TARGET_SEQUENCE = [
+    "white", "white", "white",
+    "orange",
+    "yellow", "yellow",
+    "magenta", "magenta", "magenta",
+  ];
 
-  // Blue wall has a grid of key slots; this is the one that unlocks the drawer.
+  // Magenta wall has a grid of key slots; this is the one that unlocks the drawer.
   const SLOT_COLS = 4;
   const SLOT_ROWS = 3;
   const SLOT_COUNT = SLOT_COLS * SLOT_ROWS;
@@ -45,7 +50,7 @@
   });
   const invItemsEl = document.getElementById("inv-items");
   const toastEl = document.getElementById("toast");
-  const redGlow = document.getElementById("red-glow");
+  const orangeGlow = document.getElementById("orange-glow");
   const doorEl = document.getElementById("door");
   const hookKeyEl = document.getElementById("hook-key");
   const shelfBellEl = document.getElementById("shelf-bell");
@@ -85,10 +90,10 @@
     showWall();
   }
 
-  // --- Build blue-wall key slots ----------------------------
+  // --- Build magenta-wall key slots -------------------------
   const slotEls = [];
   (function buildSlots() {
-    const blue = walls.blue;
+    const magenta = walls.magenta;
     const areaLeft = 18, areaTop = 30, areaW = 56, areaH = 46; // % of scene
     const cellW = areaW / SLOT_COLS;
     const cellH = areaH / SLOT_ROWS;
@@ -107,7 +112,7 @@
       el.style.width = slotW + "%";
       el.style.height = slotH + "%";
       el.addEventListener("click", () => onSlotClick(i));
-      blue.appendChild(el);
+      magenta.appendChild(el);
       slotEls.push(el);
     }
   })();
@@ -153,7 +158,7 @@
     // Red wall drawer is revealed only when the key is in the correct slot
     // and the blacklight has lit it up.
     const drawerRevealed = state.blacklight && state.keyPlacedAt === CORRECT_SLOT;
-    redGlow.classList.toggle("hidden", !drawerRevealed || state.drawerOpen);
+    orangeGlow.classList.toggle("hidden", !drawerRevealed || state.drawerOpen);
     drawerEl.classList.toggle("hidden", !drawerRevealed);
     drawerEl.classList.toggle("open", state.drawerOpen);
   }
@@ -164,6 +169,8 @@
     void el.offsetWidth; // restart animation
     el.classList.add("flash");
     el.addEventListener("animationend", () => el.classList.remove("flash"), { once: true });
+
+    toast("You press the button on the " + color + " wall.");
 
     state.sequence.push(color);
     if (state.sequence.length > TARGET_SEQUENCE.length) {

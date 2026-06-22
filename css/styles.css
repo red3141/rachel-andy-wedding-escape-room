@@ -102,7 +102,7 @@ h1 {
 #drawer.open { background-image: url("../images/drawer-open.svg"); }
 
 /* Glow that points to the drawer location once the key is set correctly */
-#red-glow {
+#orange-glow {
   position: absolute;
   border-radius: 50%;
   pointer-events: none;
