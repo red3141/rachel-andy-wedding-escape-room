@@ -86,15 +86,20 @@ h1 {
 }
 .button.flash { animation: btn-flash 0.45s ease; }
 
-/* Blue wall key slots */
-.slot           { background-image: url("../images/indentation.png"); }
-.slot.has-key   { background-image: url("../images/key.png"); }
-.slot.glow {
-  animation: slot-glow 1.4s ease-in-out infinite;
-}
+/* Magenta wall key slots */
+.slot               { background-image: url("../images/indentation.png"); }
+/* A placed key renders on top of the indentation (both fill the box, so they align). */
+.slot.has-key       { background-image: url("../images/key.png"), url("../images/indentation.png"); }
+/* Under blacklight the correct slot swaps to the lit indentation art... */
+.slot.glow          { background-image: url("../images/indentation-glow.png"); }
+/* ...and if the key is already in it, the key stays on top of the lit slot. */
+.slot.has-key.glow  { background-image: url("../images/key.png"), url("../images/indentation-glow.png"); }
+
+.slot.glow { animation: slot-glow 1.4s ease-in-out infinite; }
 @keyframes slot-glow {
-  0%, 100% { box-shadow: 0 0 10px 3px rgba(216, 160, 255, 0.7); filter: brightness(1.2); }
-  50%      { box-shadow: 0 0 28px 12px rgba(216, 160, 255, 1); filter: brightness(1.7); }
+  /* drop-shadow follows the art's alpha shape; box-shadow would draw a square */
+  0%, 100% { filter: brightness(1.1) drop-shadow(0 0 5px rgba(216, 160, 255, 0.85)); }
+  50%      { filter: brightness(1.5) drop-shadow(0 0 16px rgba(216, 160, 255, 1)); }
 }
 
 /* Red wall drawer */
