@@ -270,15 +270,15 @@
   }
 
   function showWelcomeMat() {
-    openModal('<img src="images/welcome-mat-zoom.svg" alt="Welcome mat clue" />');
+    openModal('<img src="images/welcome-mat-zoom.png" alt="Welcome mat clue" />');
   }
 
   function showDrawerZoom() {
     if (state.ringTaken) {
-      openModal('<img src="images/drawer-open.svg" alt="Empty open drawer" /><p style="text-align:center;color:#aaa;">The drawer is empty.</p>');
+      openModal('<img src="images/drawer-open.png" alt="Empty open drawer" /><p style="text-align:center;color:#aaa;">The drawer is empty.</p>');
       return;
     }
-    openModal('<img id="drawer-ring-img" class="clickable-ring" src="images/drawer-zoom.svg" alt="Drawer with a ring inside" /><p style="text-align:center;color:#aaa;">Click the ring to take it.</p>');
+    openModal('<img id="drawer-ring-img" class="clickable-ring" src="images/drawer-zoom.png" alt="Drawer with a ring inside" /><p style="text-align:center;color:#aaa;">Click the ring to take it.</p>');
     const img = document.getElementById("drawer-ring-img");
     if (img) {
       img.addEventListener("click", () => {

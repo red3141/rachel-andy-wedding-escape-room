@@ -71,15 +71,15 @@ h1 {
 .hotspot.hidden { display: none; }
 
 /* Green wall */
-#door        { background-image: url("../images/door-closed.svg"); }
-#door.open   { background-image: url("../images/door-open.svg"); }
-#hook-key    { background-image: url("../images/hook-key.svg"); }
-#shelf-bell      { background-image: url("../images/shelf-bell.svg"); }
-#shelf-bell.ring { background-image: url("../images/shelf-bell-ring.svg"); }
-#welcome-mat { background-image: url("../images/welcome-mat.svg"); }
+#door        { background-image: url("../images/door-closed.png"); }
+#door.open   { background-image: url("../images/door-open.png"); }
+#hook-key    { background-image: url("../images/hook-key.png"); }
+#shelf-bell      { background-image: url("../images/shelf-bell.png"); }
+#shelf-bell.ring { background-image: url("../images/shelf-bell-ring.png"); }
+#welcome-mat { background-image: url("../images/welcome-mat.png"); }
 
 /* Buttons (one image, used on every wall) */
-.button { background-image: url("../images/button.svg"); }
+.button { background-image: url("../images/button.png"); }
 @keyframes btn-flash {
   0%, 100% { filter: brightness(1); box-shadow: none; }
   50%      { filter: brightness(2.2); box-shadow: 0 0 26px 10px rgba(255, 255, 200, 0.9); }
@@ -87,8 +87,8 @@ h1 {
 .button.flash { animation: btn-flash 0.45s ease; }
 
 /* Blue wall key slots */
-.slot           { background-image: url("../images/indentation.svg"); }
-.slot.has-key   { background-image: url("../images/key.svg"); }
+.slot           { background-image: url("../images/indentation.png"); }
+.slot.has-key   { background-image: url("../images/key.png"); }
 .slot.glow {
   animation: slot-glow 1.4s ease-in-out infinite;
 }
@@ -98,8 +98,8 @@ h1 {
 }
 
 /* Red wall drawer */
-#drawer      { background-image: url("../images/drawer-closed.svg"); }
-#drawer.open { background-image: url("../images/drawer-open.svg"); }
+#drawer      { background-image: url("../images/drawer-closed.png"); }
+#drawer.open { background-image: url("../images/drawer-open.png"); }
 
 /* Glow that points to the drawer location once the key is set correctly */
 #orange-glow {
@@ -251,8 +251,8 @@ h1 {
 }
 .inv-item:hover { transform: translateY(-2px); }
 .inv-item.selected { border-color: #d8a0ff; box-shadow: 0 0 12px rgba(216, 160, 255, 0.8); }
-.inv-item[data-item="key"]  { background-image: url("../images/key.svg"); }
-.inv-item[data-item="ring"] { background-image: url("../images/ring.svg"); }
+.inv-item[data-item="key"]  { background-image: url("../images/key.png"); }
+.inv-item[data-item="ring"] { background-image: url("../images/ring.png"); }
 .inv-empty { color: #5a5a62; font-size: 14px; font-style: italic; }
 
 .hint {
