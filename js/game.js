@@ -296,11 +296,11 @@
     state.won = true;
     openModal(
       '<div class="win-message">' +
-        "<h2>You escaped!</h2>" +
-        "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>" +
-        "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>" +
-        "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>" +
-        "<p><em>(Placeholder text — replace with the real message.)</em></p>" +
+        "<h2>You win!</h2>" +
+        "<p>Of course, you don't need a game to know you're winning; your wedding clearly indicates you already are!</p>" +
+        "<p>We're so excited that you guys are married, and we're thrilled we could be a part of your special day. We hope and pray for health, happiness, and all of God's blessings in your new life together.</p>" +
+        "<p>And just like this is only the beginning of your married life, this is also only the beginning of your wedding gift. Niamh has a friend who owns an escape room business in Kingston with some great rooms, and we want to go with you! We're thinking that we figure out a time (maybe 1-2 nights) that works for all of us and we'll fit as many escape rooms in as we can. We'll cover the rooms we stay in and the rooms we escape from.</p>" +
+        "<p>Congrats again; we're so happy for you!</p>" +
       "</div>"
     );
   }
