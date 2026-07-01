@@ -300,7 +300,7 @@
         "<p>Of course, you don't need a game to know you're winning; your wedding clearly indicates you already are!</p>" +
         "<p>We're so excited that you guys are married, and we're thrilled we could be a part of your special day. We hope and pray for health, happiness, and all of God's blessings in your new life together.</p>" +
         "<p>And just like this is only the beginning of your married life, this is also only the beginning of your wedding gift. Niamh has a friend who owns an escape room business in Kingston with some great rooms, and we want to go with you! We're thinking that we figure out a time (maybe 1-2 nights) that works for all of us and we'll fit as many escape rooms in as we can. We'll cover the rooms we stay in and the rooms we escape from.</p>" +
-        "<p>Congrats again; we're so happy for you!</p>" +
+        "<p>Congrats again; we're so happy for you!<br>Richard and Rachel.</p>" +
       "</div>"
     );
   }
